@@ -32,7 +32,7 @@ Node* AVLtree::InsertNode(Node* curr, int val)
 
   return curr;
 }
-//void AVLtree::test() { cout << "aaa"; }
+
 void AVLtree::print(Node* curr)
 {
   if (curr != nullptr)
@@ -73,7 +73,7 @@ void AVLtree::sort(int* arr, int size)
     this->InsertNode(arr[i]);
     i++;
   }
-  cout << "\ninsertion complete" << endl;
+  //cout << "\ninsertion complete" << endl;
 }
 
 

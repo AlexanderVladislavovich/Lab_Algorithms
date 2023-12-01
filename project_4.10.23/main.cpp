@@ -40,9 +40,20 @@
 int main()
 {
 
-  double time = testAVLtree(1000000000);
+  double time = testAVLtree(1000);
   cout << "\nSorting time: " << time << " sec" << endl;
-  double time2 = test4MergeSort(1000000000);
+  double time2 = test4MergeSort(1000);
   cout << "\nSorting time: " << time2 << " sec" << endl;
+  cout << "//\n";
+  double time3 = testAVLtree(100000);
+  cout << "\nSorting time: " << time3 << " sec" << endl;
+  double time4 = test4MergeSort(100000);
+  cout << "\nSorting time: " << time4 << " sec" << endl;
+  cout << "//\n";
+  double time5 = testAVLtree(10000000);
+  cout << "\nSorting time: " << time5 << " sec" << endl;
+  double time6 = test4MergeSort(10000000);
+  cout << "\nSorting time: " << time6 << " sec" << endl;
+  cout << "//\n";
   return 0;
 }

@@ -2,10 +2,6 @@
 #include <iostream>
 using namespace std;
 
-void prt(int* arr)
-{
-  cout<<"prt:" << arr[0] << arr[1] <<"**\n";
-}
 
 void Merge(int *arr, int i, int m ,int j)
 {
@@ -15,11 +11,11 @@ void Merge(int *arr, int i, int m ,int j)
   int iter = 0;
   while (i1 + i2 < j + m )
   {
-    //cout << "iter =" << iter << " ," << "i1, i2 =" << i1 << ' ' << i2 << " ,arr[i1] arr[i2] =" << arr[i1]<<' ' << arr[i2] << endl;
+    
     if ((i1 < m && i2 < j && arr[i1] <= arr[i2]) || (i2 == j ))
     {
       b[i1 + i2 - i - m + 1] = arr[i1];
-      //cout << arr[i1];
+      
       i1++; iter++;
     }
     else { b[i1 + i2 - i - m + 1] = arr[i2]; i2++; iter++; }
@@ -28,8 +24,7 @@ void Merge(int *arr, int i, int m ,int j)
   {
     arr[index ] = b[index - i + 1];
   }
-  //prt(b);
-  //for (int i = 0; i < size; i++) cout << "[" << b[i] << "]";
+  
   delete[] b;
 }
 
@@ -71,7 +66,7 @@ void MergeSort(int *arr, int i, int j, int k)
     {
       if (num < k - 2)
       {
-        Merge(arr,i , i + step * (num + 1) - 1 , i + step * (num + 2) - 1); //////
+        Merge(arr,i , i + step * (num + 1) - 1 , i + step * (num + 2) - 1); //
       }
       else Merge(arr, i , i + (k - 1) * step - 1 , j );
     }  

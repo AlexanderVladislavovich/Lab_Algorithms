@@ -16,7 +16,7 @@ struct Node
     right = nullptr;
     left = nullptr;
     value = val;
-    height = 1; ///!!!!
+    height = 1; 
   }
 };
 
@@ -41,7 +41,7 @@ protected:
 public:
 
   AVLtree() { root = nullptr; }
-  //void test();
+  
   void InsertNode(int val) { root = InsertNode(root, val); }
 
   void print() { this->print(root); }

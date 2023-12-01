@@ -8,5 +8,5 @@ void Generator(int * arr, int end)
   {
     arr[i] = rand() % 10000 - 5000;
   }
-  std::cout << "\ngeneration complete" << std::endl;
+  //std::cout << "\ngeneration complete" << std::endl;
 }
