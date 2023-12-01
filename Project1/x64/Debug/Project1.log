@@ -1,0 +1,5 @@
+﻿  generator.cpp
+  tests.cpp
+  Создание кода...
+generator.obj : warning LNK4006: "void __cdecl Generator(int *,int)" (?Generator@@YAXPEAHH@Z) уже определен в tests.obj; второе определение пропущено
+  Project1.vcxproj -> D:\Мои документы\UNN\Алгоритмы и анализ сложности\Solution_Lab1\x64\Debug\Tests.lib
